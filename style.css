@@ -9,6 +9,8 @@ body {
     margin: 0;
     font-family: "Oswald", serif;
     opacity: 0;
+    overflow-y: auto;
+    scroll-behavior: smooth;
     transform: translateY(-50px);
 }
 
@@ -21,7 +23,7 @@ body::before {
     height: 100%;
     background-image: url(https://www.boyabadanaci.com/wp-content/themes/boyabadana/img/boya-badanaci-ustasi.webp);
     background-size: contain;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
     filter: blur(15px);
@@ -116,7 +118,6 @@ body>* {
     font-size: 0.9em;
     font-weight: bolder;
     text-decoration: none;
-    touch-action: manipulation;
 }
 
 .card-content {
